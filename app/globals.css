@@ -27,6 +27,16 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
+.mobile-carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-carousel::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes iphone-float {
   0%,
   100% {

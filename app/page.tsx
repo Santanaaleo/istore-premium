@@ -112,7 +112,7 @@ const faqs = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-black text-white">
+    <main className="min-h-screen overflow-x-hidden bg-black text-white">
       <div className="nav-enter border-b border-white/[0.06] bg-black/80 px-6 py-2 text-center text-[11px] font-medium text-zinc-500 sm:px-10">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-1">
           {trustItems.map((item, index) => (
@@ -126,8 +126,8 @@ export default function Home() {
         </div>
       </div>
 
-      <nav className="nav-enter mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6 sm:px-10 lg:px-12">
-        <a href="#" className="text-xl font-semibold tracking-tight text-white sm:text-[1.35rem]">
+      <nav className="nav-enter mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-5 py-5 sm:px-10 sm:py-6 lg:px-12">
+        <a href="#" className="min-w-0 text-lg font-semibold tracking-tight text-white sm:text-[1.35rem]">
            iStore.com.br
         </a>
 
@@ -141,58 +141,58 @@ export default function Home() {
 
         <a
           href="#modelos"
-          className="rounded-full border border-white/15 px-5 py-2 text-sm font-semibold text-white transition hover:border-white/35 hover:bg-white/10"
+          className="shrink-0 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white transition hover:border-white/35 hover:bg-white/10 sm:px-5"
         >
           Ver catálogo
         </a>
       </nav>
 
-      <section className="mx-auto grid min-h-[calc(100vh-121px)] w-full max-w-7xl items-center gap-12 px-6 pb-18 pt-12 sm:px-10 lg:grid-cols-[0.98fr_1.02fr] lg:gap-16 lg:px-12 lg:pb-20 lg:pt-10">
+      <section className="mx-auto grid min-h-[calc(100vh-121px)] w-full max-w-7xl items-center gap-8 px-5 pb-14 pt-8 sm:gap-12 sm:px-10 sm:pb-18 sm:pt-12 lg:grid-cols-[0.98fr_1.02fr] lg:gap-16 lg:px-12 lg:pb-20 lg:pt-10">
         <div className="max-w-3xl text-center lg:text-left">
-          <p className="hero-reveal hero-delay-1 mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-zinc-500">
+          <p className="hero-reveal hero-delay-1 mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-zinc-500 sm:mb-5 sm:text-sm sm:tracking-[0.35em]">
             iStore Premium
           </p>
-          <h1 className="hero-reveal hero-delay-2 text-5xl font-semibold leading-[0.92] tracking-[-0.07em] text-white sm:text-6xl lg:text-7xl xl:text-[5rem]">
+          <h1 className="hero-reveal hero-delay-2 text-[clamp(2.65rem,12vw,4rem)] font-semibold leading-[0.94] tracking-[-0.07em] text-white sm:text-6xl lg:text-7xl xl:text-[5rem]">
             Seu próximo
             <br />
-            <span className="whitespace-nowrap">iPhone começa aqui.</span>
+            <span className="whitespace-normal min-[390px]:whitespace-nowrap">iPhone começa aqui.</span>
           </h1>
-          <p className="hero-reveal hero-delay-3 mx-auto mt-8 max-w-[500px] text-lg leading-8 text-zinc-400 sm:text-xl lg:mx-0">
+          <p className="hero-reveal hero-delay-3 mx-auto mt-6 max-w-[500px] text-base leading-7 text-zinc-400 sm:mt-8 sm:text-xl sm:leading-8 lg:mx-0">
             Modelos selecionados com garantia, procedência e entrega para todo o Brasil.
           </p>
 
-          <div className="hero-reveal hero-delay-4 mt-11 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
+          <div className="hero-reveal hero-delay-4 mt-8 flex flex-col justify-center gap-3 min-[390px]:flex-row sm:mt-11 sm:gap-4 lg:justify-start">
             <a
               href="#modelos"
-              className="rounded-full bg-white px-8 py-4 text-base font-semibold text-black transition duration-300 hover:-translate-y-0.5 hover:bg-zinc-200 hover:shadow-[0_14px_35px_rgba(255,255,255,0.16)]"
+              className="rounded-full bg-white px-6 py-3.5 text-center text-sm font-semibold text-black transition duration-300 hover:-translate-y-0.5 hover:bg-zinc-200 hover:shadow-[0_14px_35px_rgba(255,255,255,0.16)] sm:px-8 sm:py-4 sm:text-base"
             >
               Comprar agora
             </a>
             <a
               href="#modelos"
-              className="rounded-full border border-white/15 px-8 py-4 text-base font-semibold text-white transition hover:border-white/35 hover:bg-white/10"
+              className="rounded-full border border-white/15 px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:border-white/35 hover:bg-white/10 sm:px-8 sm:py-4 sm:text-base"
             >
               Ver modelos
             </a>
           </div>
         </div>
 
-        <div className="hero-product-enter relative flex min-h-[390px] items-center justify-center lg:min-h-[520px]">
-          <div className="absolute h-52 w-36 rounded-full bg-white/[0.075] blur-xl sm:h-60 sm:w-44 lg:h-72 lg:w-48" />
-          <div className="iphone-float relative h-[402px] w-[302px] rotate-[10deg] drop-shadow-[0_36px_68px_rgba(255,255,255,0.16)] sm:h-[491px] sm:w-[369px] lg:h-[580px] lg:w-[435px]">
+        <div className="hero-product-enter relative flex min-h-[310px] items-center justify-center overflow-visible sm:min-h-[390px] lg:min-h-[520px]">
+          <div className="absolute h-44 w-32 rounded-full bg-white/[0.07] blur-xl sm:h-60 sm:w-44 lg:h-72 lg:w-48" />
+          <div className="iphone-float relative h-[326px] w-[245px] rotate-[7deg] drop-shadow-[0_28px_58px_rgba(255,255,255,0.14)] sm:h-[491px] sm:w-[369px] sm:rotate-[10deg] lg:h-[580px] lg:w-[435px]">
             <Image
               src="/images/iphone-16pro.png.png"
               alt="iPhone em destaque"
               fill
               priority
-              sizes="(max-width: 640px) 302px, (max-width: 1024px) 369px, 435px"
+              sizes="(max-width: 640px) 245px, (max-width: 1024px) 369px, 435px"
               className="object-contain"
             />
           </div>
         </div>
       </section>
 
-      <section id="modelos" className="section-reveal mx-auto w-full max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
+      <section id="modelos" className="section-reveal mx-auto w-full max-w-7xl px-5 pb-20 sm:px-10 sm:pb-24 lg:px-12">
         <div className="mb-10 flex flex-col gap-3 text-center lg:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-zinc-600">
             Seleção Premium
@@ -202,13 +202,13 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mobile-carousel -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4">
           {featuredModels.map((model) => (
             <article
               key={model.name}
-              className="group rounded-[2rem] border border-white/[0.08] bg-white/[0.035] p-4 transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.06] hover:shadow-[0_24px_80px_rgba(255,255,255,0.1)]"
+              className="group w-[82vw] max-w-[360px] shrink-0 snap-start rounded-[2rem] border border-white/[0.08] bg-white/[0.035] p-4 transition duration-300 active:scale-[0.985] hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.06] hover:shadow-[0_24px_80px_rgba(255,255,255,0.1)] sm:w-auto sm:max-w-none sm:shrink sm:active:scale-100"
             >
-              <div className="mb-5 flex h-64 items-center justify-center overflow-hidden rounded-[1.5rem] bg-gradient-to-b from-white/[0.09] to-white/[0.025] transition duration-300 group-hover:from-white/[0.12] group-hover:to-white/[0.035] sm:h-72 lg:h-64 xl:h-72">
+              <div className="mb-5 flex h-56 items-center justify-center overflow-hidden rounded-[1.5rem] bg-gradient-to-b from-white/[0.09] to-white/[0.025] transition duration-300 group-hover:from-white/[0.12] group-hover:to-white/[0.035] sm:h-72 lg:h-64 xl:h-72">
                 <Image
                   src={model.image}
                   alt={`Imagem do ${model.name}`}
@@ -229,7 +229,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="beneficios" className="section-reveal mx-auto w-full max-w-7xl px-6 pb-28 sm:px-10 lg:px-12">
+      <section id="beneficios" className="section-reveal mx-auto w-full max-w-7xl px-5 pb-24 sm:px-10 sm:pb-28 lg:px-12">
         <div className="mb-10 flex flex-col gap-3 text-center lg:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-zinc-600">
             Por que comprar aqui
@@ -239,13 +239,13 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mobile-carousel -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4">
           {benefits.map((benefit) => (
             <article
               key={benefit.title}
-              className="group rounded-[1.85rem] border border-white/[0.08] bg-white/[0.035] p-7 transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.06] hover:shadow-[0_24px_70px_rgba(255,255,255,0.08)]"
+              className="group w-[82vw] max-w-[360px] shrink-0 snap-start rounded-[1.85rem] border border-white/[0.08] bg-white/[0.035] p-6 transition duration-300 active:scale-[0.985] hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.06] hover:shadow-[0_24px_70px_rgba(255,255,255,0.08)] sm:w-auto sm:max-w-none sm:shrink sm:p-7 sm:active:scale-100"
             >
-              <div className="mb-9 flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.06] text-white transition duration-300 group-hover:border-white/25 group-hover:bg-white/[0.1] group-hover:shadow-[0_0_34px_rgba(255,255,255,0.12)]">
+              <div className="mb-7 flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.06] text-white transition duration-300 group-hover:border-white/25 group-hover:bg-white/[0.1] group-hover:shadow-[0_0_34px_rgba(255,255,255,0.12)] sm:mb-9">
                 {benefit.icon === "shield" ? (
                   <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <path d="M12 3.5 19 6v5.25c0 4.25-2.7 7.95-7 9.25-4.3-1.3-7-5-7-9.25V6l7-2.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
@@ -282,7 +282,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="depoimentos" className="section-reveal mx-auto w-full max-w-7xl px-6 pb-28 sm:px-10 lg:px-12">
+      <section id="depoimentos" className="section-reveal mx-auto w-full max-w-7xl px-5 pb-24 sm:px-10 sm:pb-28 lg:px-12">
         <div className="mb-10 flex flex-col gap-3 text-center lg:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-zinc-600">
             Seleção Premium
@@ -292,11 +292,11 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="mobile-carousel -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0 md:pb-0">
           {testimonials.map((testimonial) => (
             <article
               key={testimonial.author}
-              className="rounded-[1.85rem] border border-white/[0.08] bg-white/[0.035] p-7 transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.055] hover:shadow-[0_24px_70px_rgba(255,255,255,0.08)]"
+              className="w-[82vw] max-w-[360px] shrink-0 snap-start rounded-[1.85rem] border border-white/[0.08] bg-white/[0.035] p-6 transition duration-300 active:scale-[0.985] hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.055] hover:shadow-[0_24px_70px_rgba(255,255,255,0.08)] md:w-auto md:max-w-none md:shrink md:p-7 md:active:scale-100"
             >
               <div className="mb-7 text-sm tracking-[0.28em] text-white">★★★★★</div>
               <p className="text-base leading-7 text-zinc-300">{testimonial.quote}</p>
