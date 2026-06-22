@@ -399,6 +399,21 @@ export default function Home() {
           © 2026 iStore. Todos os direitos reservados.
         </div>
       </footer>
+
+      <a
+        href="https://wa.me/5511930071851?text=Ol%C3%A1!%20Vi%20o%20site%20da%20iStore%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20iPhones%20dispon%C3%ADveis."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fale conosco pelo WhatsApp"
+        className="whatsapp-float group fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_16px_36px_rgba(37,211,102,0.28)] transition duration-300 hover:scale-105 hover:shadow-[0_18px_42px_rgba(37,211,102,0.36)] focus:outline-none focus:ring-2 focus:ring-[#25D366]/50 focus:ring-offset-2 focus:ring-offset-black sm:bottom-6 sm:right-6 sm:h-[60px] sm:w-[60px]"
+      >
+        <span className="pointer-events-none absolute right-[calc(100%+12px)] hidden whitespace-nowrap rounded-full border border-white/10 bg-zinc-950/90 px-3 py-2 text-xs font-semibold text-white opacity-0 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur transition duration-300 group-hover:translate-x-0 group-hover:opacity-100 md:block md:translate-x-2">
+          Fale conosco
+        </span>
+        <svg className="h-7 w-7 sm:h-8 sm:w-8" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+          <path d="M16.04 3C9.03 3 3.32 8.68 3.32 15.66c0 2.23.59 4.41 1.7 6.33L3.2 28.61l6.82-1.78a12.8 12.8 0 0 0 6.02 1.51h.01c7.01 0 12.72-5.68 12.72-12.66C28.77 8.68 23.06 3 16.04 3Zm0 23.18h-.01c-1.91 0-3.78-.51-5.42-1.47l-.39-.23-4.05 1.06 1.08-3.93-.25-.4a10.48 10.48 0 0 1-1.61-5.55c0-5.78 4.78-10.49 10.66-10.49 2.85 0 5.53 1.1 7.54 3.09a10.37 10.37 0 0 1 3.12 7.41c0 5.79-4.78 10.51-10.67 10.51Zm5.84-7.86c-.32-.16-1.9-.93-2.19-1.04-.3-.11-.51-.16-.73.16-.21.32-.84 1.04-1.03 1.26-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.58-1.58a9.7 9.7 0 0 1-1.78-2.21c-.19-.32-.02-.49.14-.65.14-.14.32-.38.49-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.57-.08-.16-.73-1.74-1-2.38-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.57.08-.86.4-.3.32-1.13 1.1-1.13 2.68 0 1.58 1.16 3.11 1.32 3.33.16.21 2.28 3.46 5.52 4.86.77.33 1.37.53 1.84.68.77.24 1.48.21 2.04.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.39.19-1.52-.08-.14-.29-.22-.62-.38Z" />
+        </svg>
+      </a>
     </main>
   );
 }
