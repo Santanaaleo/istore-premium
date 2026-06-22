@@ -401,7 +401,7 @@ export default function Home() {
       </footer>
 
       <a
-        href="https://wa.me/5511930071851?text=Ol%C3%A1!%20Vi%20o%20site%20da%20iStore%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20iPhones%20dispon%C3%ADveis."
+        href="https://wa.me/5511986857264?text=Ol%C3%A1!%20Vi%20o%20site%20da%20iStore%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20iPhones%20dispon%C3%ADveis."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Fale conosco pelo WhatsApp"
