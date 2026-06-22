@@ -147,15 +147,15 @@ export default function Home() {
         </a>
       </nav>
 
-      <section className="mx-auto grid min-h-[calc(100vh-121px)] w-full max-w-7xl items-center gap-8 px-5 pb-14 pt-8 sm:gap-12 sm:px-10 sm:pb-18 sm:pt-12 lg:grid-cols-[0.98fr_1.02fr] lg:gap-16 lg:px-12 lg:pb-20 lg:pt-10">
-        <div className="max-w-3xl text-center lg:text-left">
+      <section className="mx-auto grid min-h-[calc(100vh-121px)] w-full max-w-7xl items-center gap-8 overflow-x-hidden px-5 pb-14 pt-8 sm:gap-12 sm:px-10 sm:pb-18 sm:pt-12 lg:grid-cols-[0.98fr_1.02fr] lg:gap-16 lg:overflow-visible lg:px-12 lg:pb-20 lg:pt-10">
+        <div className="w-full max-w-full text-center lg:max-w-3xl lg:text-left">
           <p className="hero-reveal hero-delay-1 mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-zinc-500 sm:mb-5 sm:text-sm sm:tracking-[0.35em]">
             iStore Premium
           </p>
-          <h1 className="hero-reveal hero-delay-2 text-[clamp(2.65rem,12vw,4rem)] font-semibold leading-[0.94] tracking-[-0.07em] text-white sm:text-6xl lg:text-7xl xl:text-[5rem]">
+          <h1 className="hero-reveal hero-delay-2 mx-auto max-w-full overflow-hidden break-normal text-5xl font-semibold leading-[0.9] tracking-[-0.07em] text-white min-[430px]:text-[3.35rem] sm:text-6xl sm:leading-[0.92] lg:mx-0 lg:text-7xl xl:text-[5rem]">
             Seu próximo
             <br />
-            <span className="whitespace-normal min-[390px]:whitespace-nowrap">iPhone começa aqui.</span>
+            <span>iPhone começa aqui.</span>
           </h1>
           <p className="hero-reveal hero-delay-3 mx-auto mt-6 max-w-[500px] text-base leading-7 text-zinc-400 sm:mt-8 sm:text-xl sm:leading-8 lg:mx-0">
             Modelos selecionados com garantia, procedência e entrega para todo o Brasil.
@@ -177,7 +177,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-product-enter relative flex min-h-[310px] items-center justify-center overflow-visible sm:min-h-[390px] lg:min-h-[520px]">
+        <div className="hero-product-enter relative flex min-h-[310px] w-full max-w-full items-center justify-center overflow-hidden sm:min-h-[390px] sm:overflow-visible lg:min-h-[520px]">
           <div className="absolute h-44 w-32 rounded-full bg-white/[0.07] blur-xl sm:h-60 sm:w-44 lg:h-72 lg:w-48" />
           <div className="iphone-float relative h-[326px] w-[245px] rotate-[7deg] drop-shadow-[0_28px_58px_rgba(255,255,255,0.14)] sm:h-[491px] sm:w-[369px] sm:rotate-[10deg] lg:h-[580px] lg:w-[435px]">
             <Image
